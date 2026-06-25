@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>شروع مسیر همکاری</title>
+  <meta name="description" content="صفحه تک‌صفحه‌ای معرفی و دانلود اپلیکیشن ثبت‌نام استخدام" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <main class="app-shell">
+    <section class="phone-frame">
+      <div class="top-glow"></div>
+
+      <header class="nav">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span>مسیر همکاری</span>
+        </div>
+        <span class="status-pill">ثبت‌نام سریع</span>
+      </header>
+
+      <section class="slider" id="slider">
+        <article class="slide active" data-index="0">
+          <div class="eyebrow">فرصت رشد</div>
+          <h1>شروع یک مسیر حرفه‌ای تازه</h1>
+          <p>با یک ثبت‌نام کوتاه، مراحل اولیه همکاری را آغاز کن و اپلیکیشن راهنمای ثبت‌نام را دریافت کن.</p>
+          <div class="floating-card card-one">
+            <span>+ مسیر ساده</span>
+            <strong>ثبت اولیه</strong>
+          </div>
+        </article>
+
+        <article class="slide" data-index="1">
+          <div class="eyebrow">محیط پویا</div>
+          <h1>همکاری در یک فضای مدرن و هدفمند</h1>
+          <p>طراحی این صفحه برای جذب سریع، نمایش شفاف مسیر و هدایت کاربر به مرحله بعد ساخته شده است.</p>
+          <div class="floating-card card-two">
+            <span>تجربه بهتر</span>
+            <strong>Mobile First</strong>
+          </div>
+        </article>
+
+        <article class="slide" data-index="2">
+          <div class="eyebrow">دانلود بعد از ورود</div>
+          <h1>شماره موبایل را وارد کن</h1>
+          <p>پس از اعتبارسنجی شماره، دکمه دانلود اپلیکیشن فعال می‌شود.</p>
+
+          <form id="phoneForm" class="phone-form">
+            <label for="phone">شماره موبایل</label>
+            <div class="input-row">
+              <input id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="مثلاً 09123456789" maxlength="11" />
+              <button type="submit">ورود</button>
+            </div>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+
+          <div id="downloadPanel" class="download-panel hidden">
+            <div>
+              <span class="ok-mark">✓</span>
+              <strong>ورود تأیید شد</strong>
+              <p>اکنون فایل راهنمای ثبت‌نام را دریافت کن.</p>
+            </div>
+            <a id="downloadBtn" href="./downloads/app.apk" download class="download-btn">دانلود اپلیکیشن</a>
+          </div>
+        </article>
+      </section>
+
+      <footer class="controls">
+        <button class="arrow" id="prevBtn" aria-label="قبلی">‹</button>
+        <div class="dots" id="dots">
+          <button class="dot active" data-go="0"></button>
+          <button class="dot" data-go="1"></button>
+          <button class="dot" data-go="2"></button>
+        </div>
+        <button class="arrow" id="nextBtn" aria-label="بعدی">›</button>
+      </footer>
+    </section>
+
+    <aside class="side-copy">
+      <span class="mini-title">Landing Upgrade</span>
+      <h2>صفحه تک‌صفحه‌ای بدون اسکرول اضافی</h2>
+      <p>همه چیز در قالب اسلایدهای شناور نمایش داده می‌شود؛ کاربر گیج نمی‌شود و مستقیم به دانلود هدایت می‌شود.</p>
+      <ul>
+        <li>افکت ذرات پس‌زمینه</li>
+        <li>اسلاید خودکار و دستی</li>
+        <li>اعتبارسنجی شماره موبایل ایران</li>
+        <li>اتصال اختیاری به تلگرام</li>
+      </ul>
+    </aside>
+  </main>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
